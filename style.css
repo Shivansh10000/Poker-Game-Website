@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    height: 60px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#logo {
+    margin: 2px 4px;
+}
+
+#logo img {
+    margin: 5px 16px;
+    height: 60px;
+    width: 70px;
+    transition-duration: 1s;
+    opacity: 1.5;
+    z-index: 5;
+}
+
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 14px;
+    font-size: 1.3rem;
+    color: white;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 3px 3px;
+}
+
+#clock {
+    display: block;
+    color: #b4f4f0;
+    text-decoration: none;
+    padding: 3px 3px;
+    font-size: 1.1rem;
+    margin-left: 19rem;
+}
+
+.h-primary {
+    font-size: 5rem;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Beau Rivage', cursive;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    color: black;
+    padding: 10px;
+}
+.credits-info{
+    font-size: 1.5rem;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-items {
+    margin: 60px 10px;
+    border: 2px solid black;
+    list-style: none;
+    text-align: center;
+    width: 238px;
+    height: 40px;
+    font-size: 30px;
+    background-color: #f4ebaa;
+    cursor: pointer;
+    font-family: 'Beau Rivage', cursive;
+}
+
+#menu::before {
+    content: "";
+    background: url('https://thumbs.dreamstime.com/b/poker-game-ace-clubs-horizontal-background-your-tournament-shape-write-your-message-empty-frame-dimensions-46595571.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#menu .h-primary {
+    color: #f4ebaa;
+    margin-top: 50px;
+}
+
+.gameplay-area {
+    margin-top: 20px;
+    padding: 7px;
+}
+#round-info{
+    content: "";
+    background: url('https://img.freepik.com/free-vector/realistic-studio-lights-empty-background-design_1017-27233.jpg?w=2000') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 135%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+
+.card-slot {
+    display: flex;
+    border: 2px solid black;
+    height: 149px;
+    width: 93px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6rem;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+.computer-slot::before{
+    background: url('https://c8.alamy.com/comp/2C8BN92/playing-card-back-side-isolated-on-white-clipping-path-included-2C8BN92.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.card-slot::before,
+.card-slot::after {
+    position: absolute;
+    content: attr(data-value);
+    font-size: 1rem;
+}
+.card-slot::before {
+    top: .2rem;
+    left: .2rem
+  }
+  
+.card-slot::after {
+    bottom: .2rem;
+    right: .2rem;
+    transform: rotate(180deg);
+  }
+
+  .computer-slot .card-slot{
+      display: none;
+  }
+
+.black{
+      color: black;
+  }
+.red{
+      color: red;
+  }
+
+.card-box {
+    display: flex;
+    margin: 30px;
+}
+#bet-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid #fd7070;
+    background-color: #705959;
+    color: white;
+    margin: 19px 64px;
+    width: 134px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#tablebox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#centerthis{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.combos{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.combos ol li{
+    margin-top: 40px;
+    font-size: 20px;
+}
+.container::before{
+    content: "";
+    background: url('https://w0.peakpx.com/wallpaper/434/283/HD-wallpaper-hands-of-poker-red-cards-game-black-color.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+.menu-items:hover{
+    background-color: rgb(47, 255, 234);
+}
+.menu-items a:hover{
+    color: rgb(102, 0, 255);
+}
+#bet:hover, #peek:hover, #proceed:hover{
+    background-color: #646161;
+    color: rgb(43, 1, 149);
+
+}

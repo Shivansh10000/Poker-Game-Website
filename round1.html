@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Card Game</title>
+  <script src="/scripts.js" type="module"></script>
+  <!-- this is because  the script is meant to be executed after the document has been parsed, but before firing DOMContentLoaded  -->
+  <!-- The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="h-primary" id="round-info">
+    ROUND - 1 
+  </div>
+  <div class="credits-info" id="credits">
+    Credits Remaining : 5000
+  </div>
+
+  <div class="gameplay-area">
+    <div class="text">Computer</div>
+    <div class="card-box">
+      <div class="card-slot computer-slot"></div>
+      <div class="card-slot computer-slot"></div>
+    </div>
+    <div class="text" id="centerthis">Table</div>
+    <div class="card-box" id="tablebox">
+      <div class="card-slot"></div>
+      <div class="card-slot"></div>
+      <div class="card-slot"></div>
+    </div>
+    <div class="text">Player</div>
+    <div class="card-box">
+      <div class="card-slot"></div>
+      <div class="card-slot"></div>
+    </div>
+
+    <div id="bet-section">
+      <div class="btn" id="betamount">
+        BET
+      </div>
+      <div class="btn" id="peek">
+        PEEK
+      </div>
+      <div class="btn" id="proceed">
+        PROCEED
+      </div>
+      <!-- <div class="btn" id="winprobablity">
+        WIN % : 
+      </div> -->
+    </div>
+  </div>
+  
+</body>
+</html>

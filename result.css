@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container::before{
+    background-color: aqua;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.85;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.h-primary {
+    font-size: 5rem;
+    color: black;
+    padding: 3px;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Beau Rivage', cursive;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    color: black;
+    padding: 4px;
+}
+
+#result {
+    text-align: center;
+    margin-bottom: 103px;
+}
+
+.explaination {
+    display: flex;
+    flex-direction: column;
+}
+
+#resultexplaination {
+    margin: 20px 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#creditsinfo {
+    margin: 20px 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#gameinfo {
+    margin: 20px 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
